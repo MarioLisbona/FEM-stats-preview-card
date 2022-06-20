@@ -83,6 +83,10 @@ body {
     color: var(--heading-and-stats);
 }
 
+.accent {
+    color: var(--accent);
+}
+
 .info {
     font-size: .8rem;
     padding-top: 2.3em;
@@ -98,8 +102,33 @@ body {
 }
 
 .companies, .templates, .querries {
+    font-size: 1.5em;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
+}
+
+.companies::after {
+    content: 'COMPANIES';
+    position: absolute;
+    font-size: .5em;
+    color: var(--stat-heading);
+    transform: translate(-80%, 280%);
+}
+
+.templates::after {
+    content: 'TEMPLATES';
+    position: absolute;
+    font-size: .5em;
+    color: var(--stat-heading);
+    transform: translate(-60%, 280%);
+}
+
+.querries::after {
+    content: 'QUERRIES';
+    position: absolute;
+    font-size: .5em;
+    color: var(--stat-heading);
+    transform: translate(-105%, 280%);
 }
 
 
