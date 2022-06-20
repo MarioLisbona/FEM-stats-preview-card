@@ -3,6 +3,3 @@
 
 # Ignore all text files
 *.txt
-
-#Ignore /screenshots folder
-/screenshots
