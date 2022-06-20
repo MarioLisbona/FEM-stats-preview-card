@@ -65,11 +65,15 @@ body {
     border-bottom-right-radius: .5em;
 }
 
+.image-container {
+    position: relative;
+}
+
 .image-container::after {
     content: "";
     position: absolute;
-    width: 30rem;
-    height: 24.9rem;
+    width: 100%;
+    height: 100%;
     background-color: hsla(277, 64%, 31%, 0.7);
     transform: translate(-100%);
     border-top-right-radius: .5em;
@@ -168,7 +172,9 @@ body {
     .companies, .templates, .querries {
         width: 100%;
         margin: 2em 0;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .image-container img {
@@ -177,13 +183,10 @@ body {
         border-bottom-right-radius: 0;
     }
 
-    .image-container::after {
-        content:'';
-        width: 25em;
-        height: 20.7em;
-        border-radius: .5em;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+    .companies::after,
+    .templates::after,
+    .querries::after {
+        transform: translate(0%, 280%);
     }
 
 }
