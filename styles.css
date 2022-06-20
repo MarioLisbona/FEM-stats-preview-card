@@ -89,7 +89,7 @@ body {
 
 .info {
     font-size: .8rem;
-    padding-top: 2.3em;
+    padding-top: 1.8em;
 }
 
 .stats-container {
@@ -133,19 +133,69 @@ body {
 
 
 
+@media (max-width: 1000px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3em 0;
+    }
 
+    .info-container {
+        padding: 1em 3em;
+        border-radius: .5em;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
 
+    .main-container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin: 2em 4em;
+        max-width: 25em;
+    }
 
+    .title, .info {
+        text-align: center;
+    }
 
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 1em 0;
+    }
 
+    .companies, .templates, .querries {
+        width: 100%;
+        margin: 2em 0;
+        text-align: center;
+    }
+
+    .image-container img {
+        border-top-right-radius: .5em;
+        border-top-left-radius: .5em;
+        border-bottom-right-radius: 0;
+    }
+
+    .image-container::after {
+        content:'';
+        width: 25em;
+        height: 20.7em;
+        border-radius: .5em;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+}
 
 /* Frontend Mentor footer */
 
 .attribution {
     font-size: 11px; text-align: center; 
+    color: var(--stat-heading);
 }
 
 
 .attribution a {
-    color: hsl(228, 45%, 44%); 
+    color: var(--accent)
 }
