@@ -65,6 +65,17 @@ body {
     border-bottom-right-radius: .5em;
 }
 
+.image-container::after {
+    content: "";
+    position: absolute;
+    width: 30rem;
+    height: 24.9rem;
+    background-color: hsla(277, 64%, 31%, 0.7);
+    transform: translate(-100%);
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+}
+
 .title {
     margin-bottom: 1em;
     font-family: 'Inter', sans-serif;
