@@ -67,6 +67,8 @@ body {
 
 .image-container {
     position: relative;
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
 }
 
 .image-container::after {
@@ -178,9 +180,21 @@ body {
     }
 
     .image-container img {
+        border-radius: 0;
         border-top-right-radius: .5em;
         border-top-left-radius: .5em;
-        border-bottom-right-radius: 0;
+    }
+
+    .image-container {
+        border-radius: 0;
+        border-top-right-radius: .5em;
+        border-top-left-radius: .5em;
+    }
+
+    .image-container::after {
+        border-radius: 0;
+        border-top-right-radius: .5em;
+        border-top-left-radius: .5em;
     }
 
     .companies::after,
