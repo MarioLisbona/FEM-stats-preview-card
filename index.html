@@ -24,7 +24,13 @@
           <div class="querries">12m+</div>
         </div>
       </div>
-      <div class="image-container"><img src="./images/image-header-desktop.jpg" alt="people working"></div>
+      <div class="image-container">
+        <picture>
+          <source media="(min-width:1000px)" srcset="./images/image-header-desktop.jpg">
+          <source media="(min-width:300px)" srcset="./images/image-header-mobile.jpg">
+          <img src="./images/image-header-desktop.jpg" alt="">
+        </picture>
+      </div>
     </div>
   </main>
   <footer>
